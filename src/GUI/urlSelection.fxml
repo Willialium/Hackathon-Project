@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="800.0" style="-fx-base: #38C759; -fx-background-color: #DE88CA;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.URLController">
+   <children>
+      <Button id="button" layoutX="621.0" layoutY="217.0" mnemonicParsing="false" onAction="#browse" prefHeight="34.0" prefWidth="129.0" text="Browse" />
+      <TextField fx:id="field" layoutX="36.0" layoutY="217.0" prefHeight="34.0" prefWidth="481.0" />
+      <Label fx:id="label" layoutX="140.0" layoutY="105.0" prefHeight="80.0" prefWidth="347.0" style="-fx-font-size: 24;" text="Enter the directory of your MIDI file (.mid) for analyzing" wrapText="true" />
+      <ImageView fx:id="loading" fitHeight="80.0" fitWidth="80.0" layoutX="360.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true" translateX="900.0" AnchorPane.bottomAnchor="31.0" AnchorPane.leftAnchor="360.0" AnchorPane.rightAnchor="360.0" AnchorPane.topAnchor="279.0">
+         <image>
+            <Image url="@loadingIcon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
